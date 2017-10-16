@@ -15,12 +15,3 @@ get "/game/:value1/:value2" do
   @outcome = game.outcome()
   erb(:result)
 end
-
-
-
-# Extensions:
-#
-#     Add a welcome page (and a route to get it) to explain the rules before the user picks their move. Add a link to this on the result view.
-#
-#     Add some CSS to either/both of your pages.
-#
