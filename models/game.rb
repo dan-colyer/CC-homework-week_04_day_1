@@ -6,19 +6,19 @@ class Game
   end
 
   def outcome()
-    if (@value1 = @value2)
+    if (@value1 == @value2)
       "Draw"
-    elsif ((@value1 = "rock") && (@value2 = "scissors"))
+    elsif ((@value1 == "rock") && (@value2 == "scissors"))
       "Rock Wins!"
-    elsif ((@value1 = "scissors") && (@value2 = "rock"))
+    elsif ((@value1 == "scissors") && (@value2 == "rock"))
       "Rock Wins!"
-    elsif ((@value1 = "rock") && (@value2 = "paper"))
+    elsif ((@value1 == "rock") && (@value2 == "paper"))
       "Paper Wins!"
-    elsif ((@value1 = "paper") && (@value2 = "rock"))
+    elsif ((@value1 == "paper") && (@value2 == "rock"))
       "Paper Wins!"
-    elsif ((@value1 = "paper") && (@value2 = "scissors"))
+    elsif ((@value1 == "paper") && (@value2 == "scissors"))
       "Scissors Wins!"
-    elsif ((@value1 = "scissors") && (@value2 = "paper"))
+    elsif ((@value1 == "scissors") && (@value2 == "paper"))
       "Scissors Wins!"
     end
   end

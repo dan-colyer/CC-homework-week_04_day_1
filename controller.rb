@@ -1,19 +1,14 @@
 require("sinatra")
 require("sinatra/contrib/all")
-require_relative("./models/calculator.rb")
+require_relative("./models/game.rb")
 
 get "/game/:value1/:value2" do
   game = Game.new(params[:value1], params[:value2])
+  @outcome = game.outcome()
+  erb(:result)
 end
 
 
-
-# get "/add/:num1/:num2" do
-#   calculator = Calculator.new(params[:num1].to_i, params[:num2].to_i)
-#   #return calculator.add().to_s
-#   @calculation = calculator.add()
-#   erb(:result)
-# end
 
 # Create a simple sinatra app to allow the user to play rock, paper, scissors in their browser.
 #
