@@ -7,7 +7,7 @@ class Game
 
   def outcome()
     if (@value1 == @value2)
-      "Draw"
+      "a Draw"
     elsif ((@value1 == "rock") && (@value2 == "scissors"))
       "Rock Wins!"
     elsif ((@value1 == "scissors") && (@value2 == "rock"))
